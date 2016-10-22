@@ -1,0 +1,212 @@
+USER: borgr
+ID: 305385338
+leshem choshen
+
+I talked to Guy Hacohen about some of the things.
+
+==================
+    Description    
+==================
+Nodes and SkipiNodes classes and functions
+==================
+      Part 1     
+==================
+h0 - Returns 0 as a key to everything. Fastest
+but everything is colliding.
+
+h1 - Returns the modulo of the 
+Number that represents the first letter.
+All strings starting with the same letter
+will be together, resulting in many collisions.
+slower than the above.
+Works only for strings.
+
+h2 - Sums the ascii of the letters,
+and then uses modulo to resize
+it to the size of the hash table.
+Order is not considered so 
+(os and so will be the same)
+harder to make collisions, but stil
+far from randomic (ideal) and may result
+in many collisions for non randomic strings.
+slower than the above.
+Works only for strings.
+
+h3 - Takes the ascii of each letter side
+by side, and then uses modulo to resize
+it to the size of the hash table.
+Will not work well for some sizes
+of hash tables (128 for example will only
+consider first letter)
+So this unrandomic behaviour may result
+in many collisions.
+Also the result might have many digits
+for short lengths of input, and the longer it gets
+the more possibility for collision there is,
+especially considering the fact that the length
+changes each time (depends on m),
+it will also take a lot of time
+to calculate it.
+slower than the above.
+Works only for strings.
+
+h4- This function gets a totally random 
+number in the range, but it can not
+replicate the outcomes.
+so, it is great, but it is not really hash.
+
+h5 - If it is a number, just uses modulo
+if it is a string shift 4 each and xor
+the outcome with the result of the last ones
+(in the original file there is an error
+and it only shift 4 the first char,
+if you unindent the return
+out of the for loop it becomes
+much more usefull and considers
+all of the letters).
+When finishes, it uses the modulo to get
+it to the right size.
+If it is another hashable object, it uses
+its string representaion (__str__) 
+to get a string.
+This function can hash every hashable.
+In different kinds of input, many collisions are possible
+(for example "w" and 119)
+and tuples of only one item 
+are not of the same key as the item (1 != (1,))
+which may be useful.
+Better than the above functions on overall preformance.
+
+h6 - Maps each letter (no letters == 0)
+to shift 7 of the first letter,
+and then * 100003 (a large prime number)
+xor the ascii of the char
+and xor the length and that for each char
+the result takes modulo to get to
+the right size.
+takes more time than h5, but
+has less collisions max and varience (better).
+Works only for strings.
+
+h7 - Uses md5 built in function then 
+digest it to hexadecimal and turnes
+the answer to int and modolu
+Much faster than h6 and h5, with less collisions
+and best varience and max load.
+Works only for strings.
+
+h8 - Does the same with the
+built in funcction sha1.
+Has less collisions than md5 (without digesting,
+really hard to find collisions in its 2^80)
+slower than md5 and gives a longer 
+result. 
+Works only for strings.
+
+h9 - Is just the normal hash with modulo
+not as good in collisions
+as md5 and sha1 but is better
+than the others, fast.
+Works for any hashable.
+
+When the size of the list is bigger there are less
+collisions (more optional keys).
+
+Prime list length has the advantage
+of avoiding repetitions
+with bad hashes.
+If the hash is far from randomic it is
+expected for certain dividers to be
+more common then others
+e.g. 2 - 4 - 6 - 8 (gcd = 2).
+a non prime size will have more common
+dividers with those sequences.
+In the example above
+in a list of length 4
+only two buckets will be filled.
+This is the length/
+(the greatest common divider of 
+their greatest common divider
+(here 4/gcd(4,gcd(2,4,6,8)) = 2))
+so a prime has less collisions of this sort
+
+
+
+==================
+      Part 2     
+==================
+is_palindrome - O(n)
+runs on all the nodes
+a constant number of times
+have_intersection - o(n)
+runs on all the nodes of both
+get_item - o(n)
+runs n times
+reverse - O(n)
+runs on all the nodes
+steps - o(n)
+runs n times
+length - o(n)
+runs on all the nodes
+slice - o(n)
+runs on all the nodes
+a constant number of times
+merge_lists - o(n)
+runs on all the nodes
+merge_sort - o(nlogn)
+runs logn times on each node
+
+
+
+==================
+      Part 3     
+==================
+is_palindrome - O(n)
+will have to run on all of the nodes
+it might be faster but still - O(n)
+have_intersection - 
+o(1) just compare tails 
+and it will be an error
+anyway (if the list is
+not very short, there will 
+be a node with the wrong skip_back)
+so even going through it all
+will be (asymptotically,
+but also exactly)
+4 steps.
+cycle - O(1)?
+It means that the tail.next is not None
+but this is not supposed to be
+like that in the way these lists are built
+get_item - O(n)
+runs n or n/2 times
+maybe fater but still O(n)
+reverse - O(n)
+will have to run on all of the nodes
+it might be faster but still O(n)
+steps - O(n)
+runs n times
+length - O(n)
+will have to run on all of the nodes (or half)
+it might be faster but still O(n)
+slice - O(n)
+will have to run on all of the nodes (or half)
+it might be faster but still O(n)
+merge_lists - O(n)
+will have to run on all of the nodes (or half)
+it might be faster but still O(n)
+merge_sort - O(nlogn)
+will still use the same sub functions
+with the same slice like behavior 
+still O(nlogn)
+
+
+==================
+    Containing    
+==================
+skipi_list.py skipilist 
+sllist_utils.py sll utilities
+README
+==================
+      Usage
+==================
