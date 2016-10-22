@@ -1,0 +1,31 @@
+1. The meaning of ".." directory is the directory "above"
+ the one you are currently in.
+ It is called the parent directory.
+ It may be useful to go to a place relative to the current
+ one without knowing the full path or typing it again.
+The meaning of "." directory is the current directory,
+ it might be used to change things in the current directory
+ (for example: permissions).
+2. A relative path is a path related to where you are now,
+ when an absolute path is the same path no matter where you are.
+3. "*" stands for any number of any character and
+ "?" stands for one nonspecific character.
+ you can use them in ls to get information for specific files
+ (for example: *.txt for txt endings).
+ you can use them in cp command to copy a group of files
+ (for example: cp ex?.txt /temp will copy ex0.txt and ex1.txt)
+4. The "&" is used in the shell to run programs in the background.
+ If a program was not opened with "&" it is possible to press ctrl+Z 
+ and then bg to get the same result.
+5. The command ls -l [filename] will start its output by showing
+ you the requested file's permissions.
+6. To enter into the backup all you need to do is cd .snapshot
+ and than choose the right backups.
+7. grep finds lines with a specific string in a file or in some files.
+Example: grep "borgr" README will return the line in the README with my username.
+cat concatinates (combines) two files and prints them, 
+Example: cat ex0.txt hello.py will print the text of the two files one after the other.
+cal opens a calender or the date of Easter
+Example cal 2013 will show this year's calender
+ and cal -1 will show this month's calender.
+
