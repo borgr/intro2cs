@@ -1,0 +1,19 @@
+Standalone testing instructions:
+
+1. Place your python files in this directory.
+
+2. Run 'python3 tests_rt.py'
+
+3. Run 'python3 tests_b.py'
+
+4. Run 'python3 filelist.py <tarfile>', where '<tarfile>'
+   is the name of your file, to determine if you are missing
+   files, or have extra files.
+
+If you are using Windows, bypass the mp_test method in autotest.py
+by adding the line 'return None,target(*args,**kwargs)' to the
+beginning of the method.
+
+As the semester proceeds, you will learn how to modify these
+files in order to run only some of the tests, or modify
+them in ways that will help in debugging.

@@ -1,0 +1,41 @@
+USER: borgr
+ID: 305385338
+leshem choshen
+
+I did not ask anyone about this excrecise.
+
+Notice that the sequence
+goes like that:
+for n=1 p=pension start x = expenses
+ an = growths in percentage
+p*a1=X
+for n=2
+p*a1a2/(a2+1) = x
+p*a1a2a3/((a2+1)a3)+1=x
+and so on
+therefore there is no use for epsilon.
+
+==================
+    Description    
+==================
+In this you have everything for
+the pensioner.
+a game of battleships, and functions
+helping to use your pension for renting.
+Renting the most valueable house or
+best one according to value
+and game opponents.
+
+==================
+    Containing    
+==================
+ex4.py A file containing different
+ functions for pensions' calculations
+and battleships game.
+battleship.py battlships functions
+
+==================
+      Usage
+==================
+python3 ex4.py 	
+python3 battleship.py
