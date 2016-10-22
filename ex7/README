@@ -1,0 +1,43 @@
+USER: borgr
+ID: 305385338
+leshem choshen
+
+I did not ask anyone about this excrecise.
+
+==================
+    Description    
+==================
+Three files with tweets related operations
+
+==================
+    Containing    
+==================
+geo_tweet_tools.py geographic functions
+tweet.py a class for a tweet
+nation_mood.py functions that deals
+with many tweets
+README
+==================
+      Usage
+==================
+usage: trends.py [-h] [--print_sentiment] [--run_doctests]
+                 [--draw_centered_map] [--draw_state_sentiments]
+                 [--draw_map_for_term] [--draw_map_by_hour]
+                 [--containing_state] [--file FILE]
+                 [T [T ...]]
+
+Run Trends
+
+positional arguments:
+  T                     Text to process
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --print_sentiment, -p
+  --run_doctests, -t
+  --draw_centered_map, -d
+  --draw_state_sentiments, -s
+  --draw_map_for_term, -m
+  --draw_map_by_hour, -b
+  --containing_state, -c
+  --file FILE, -f FILE
