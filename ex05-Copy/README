@@ -1,0 +1,24 @@
+USER: borgr
+ID: 305385338
+leshem choshen
+
+I did not ask anyone about this excrecise.
+
+==================
+    Containing    
+==================
+ex3.py A file containing different
+ functions for pensions' calculations.
+
+==================
+      Usage
+==================
+python3 ex3.py 	<constant_pension(salary, save,
+			growth_rate, years)>
+			<variable_pension
+			(salary, save, growth_rates)>
+			<choose_best_fund
+			(salary,save,funds_file)>
+			<growth_in_year(growth_rates,year)>
+			<inflation_growth_rates
+			(growth_rates,inflation_factors)>

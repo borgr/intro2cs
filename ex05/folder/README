@@ -1,0 +1,27 @@
+USER: borgr
+ID: 305385338
+leshem choshen
+
+I did not ask anyone about this excrecise.
+
+==================
+    Description    
+==================
+These are a couple of recursions
+and recursionrelated tasks.
+
+==================
+    Containing    
+==================
+GetToTheZero.py check if you can
+ .get to the boss
+NonRecursiveMystery.py a non recursive
+function, with the same 
+mysterious output.
+AlignDNA.py compares dna strands
+==================
+      Usage
+==================
+python3 GetToTheZero.py
+python3 NonRecursiveMystery.py 
+python3 AlignDNA.py 	
