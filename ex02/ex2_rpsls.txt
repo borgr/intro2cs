@@ -1,0 +1,39 @@
+#Part 2:
+
+#1a
+"    Please enter your selection: 1 (Rock), 2 (Paper), 3 (Scissors), 4 (Lizard) or 5 (Spock): "
+#1ai
+"    Please select one of the available options.\n"
+#1b
+"    Player has selected: @@@." #@@@ is one of Rock/Paper/...
+#1d
+"    Computer has selected: @@@." #@@@ is one of Rock/Paper/...
+#1e
+"    The winner for this round is: @@@\n" #@@@ is Computer/Player
+#1ei
+"    This round was drawn\n"
+#2
+"The winner for this game is: @@@" #@@@ is Computer/Player
+#3
+"Game score: Player @@@, Computer @@@, draws @@@" #counts of: player's wins, computer's wins, draws
+
+#Part 3:
+
+#1
+"Welcome to the Rock-Scissors-Paper-Lizard-Spock game!"
+#2a
+"Select set length: "
+#2bi
+"Now beginning game @@@" #Current game number
+#2c
+"Set score: Player @@@, Computer @@@" #player's wins, computer's wins
+#2d
+"Congratulations! You have won in @@@ games." #number of games
+#2d
+"Too bad! You have lost in @@@ games." #curGameAmnt
+#e
+"You have played @@@ sets, and won @@@!\n " #sets played/sets won
+#f
+"Do you want to: 1 - quit, 2 - reset scores or 3 - continue? "
+#fi
+"Resetting scores"

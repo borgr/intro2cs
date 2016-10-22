@@ -1,0 +1,23 @@
+USER: borgr
+ID: 305385338
+Leshem Choshen
+
+Talked about the orders
+ of ex2 with Guy Hacohen.
+And about what is Usage
+ with him and with Rotem Gera.
+
+==================
+    Containing    
+==================
+
+ex2_square.py makes a square and rhumbos
+ex2_rpsls.py plays rpsls
+README
+
+==================
+    Usage
+==================
+
+python3.3 ex2_square.py
+python3.3 ex2_rpsls.py
