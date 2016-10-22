@@ -1,0 +1,66 @@
+USER: borgr
+ID: 305385338
+leshem choshen
+
+Lior Fox helped me
+to solve a problem I had in the code
+(printed the iterator for check ups
+and then it was empty when needed) 
+
+==================
+    Description    
+==================
+Functions related to huffman compression
+
+==================
+    Containing    
+==================
+hzlib.py
+hzip.py
+hunzip.py
+README
+
+==================
+      Usage
+==================
+hzip:
+positional arguments:
+  infile                the file to zip
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -o OUTFILE, --outfile OUTFILE
+                        Name of output file
+  -s SUFFIX, --suffix SUFFIX
+                        Default suffix to remove instead of .hz
+  -S OUTSUFFIX, --outsuffix OUTSUFFIX
+                        Default suffix to add if instead of .out
+  -f, --force           Force decompression and overwrite output file if it
+                        exists
+hunzip:
+positional arguments:
+  infile                the file to unzip
+optional arguments:
+  -h, --help            show this help message and exit
+  -o OUTFILE, --outfile OUTFILE
+                        Name of output file
+  -s SUFFIX, --suffix SUFFIX
+                        Default suffix to remove instead of .hz
+  -S OUTSUFFIX, --outsuffix OUTSUFFIX
+                        Default suffix to add if instead of .out
+  -f, --force           Force decompression and overwrite output file if it
+                        exists
+
+==================
+      else
+==================
+compress will take more memory,
+because it will have to calculate
+many things including the tree and to count letters,
+and that will take a lot of time and memory that
+in the decompression will be already calculated.
+
+you can avoid that by using the same codebook each time,
+if for example you always compress english books,
+checking a whole book will probably be good enough statisticly
+to just use the same canonical codebook each time.

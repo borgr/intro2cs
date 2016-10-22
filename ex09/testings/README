@@ -1,0 +1,23 @@
+USER: borgr
+ID: 305385338
+leshem choshen
+
+Lior Fox helped me
+to solve a problem I had in the code
+(printed the iterator for check ups
+and then it was empty when needed) 
+
+==================
+    Description    
+==================
+Functions related to huffman compression
+==================
+    Containing    
+==================
+hzlib.py
+hzip.py
+hunzip.py
+README
+==================
+      Usage
+==================
